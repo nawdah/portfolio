@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nawdah/portfolio.git"
+  },
+  "author": "nawdah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nawdah/portfolio/issues"
+  },
+  "homepage": "https://github.com/nawdah/portfolio#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}
