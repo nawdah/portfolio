@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="../static/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="../static/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="../static/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="../static/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="../static/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="../static/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="../static/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../static/css/theme.min.css">
+
+    <title>Nada Ibrahim</title>
+  </head>
+  <body>
+    <section class="navigation">
+    <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light overlay">
+        <div class="container">
+            
+            <!-- Brand -->
+          <a class="navbar-brand" href="/">
+            <img src="../static/img/namelogo.png" class="navbar-brand-img" alt="...">
+          </a>
+          
+          <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+  
+          <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+  
+            <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fe fe-x"></i>
+                 </button>
+  
+            <!-- Navigation -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarLandings" href="about" aria-haspopup="true">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarAccount" href="contact" aria-haspopup="true">
+                            Contact
+                        </a>
+                    </li>
+                </ul> 
+            </div>
+  
+        </div>
+      </nav>
+    </section>
+
+    <!-- CONTENT
+    ================================================== -->
+    <section class="pt-8 pt-md-11">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md">
+                
+                    <!-- Link -->
+                    <a href="/" class="font-weight-bold font-size-sm text-decoration-none mb-3">
+                        <i class="fe fe-arrow-left mr-3"></i> Go Back
+                    </a>
+        
+                    <!-- Heading -->
+                    <h1 class="display-4 mb-2">
+                        Measuring the H I Content of Early-Type Galaxies
+                    </h1>
+        
+                    <!-- Text -->
+                    <p class="font-size-lg text-gray-700 mb-5 mb-md-0">
+                        April 2018
+                    </p>
+        
+                </div>
+            </div> <!-- / .row -->
+            <div class="row">
+                <div class="col-12">
+                    
+                    <!-- Divider -->
+                    <hr class="my-6 my-md-8 border-gray-300">
+        
+                </div>
+            </div> <!-- / .row -->
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    
+                    <!-- Heading -->
+                    <h2>
+                        Purpose
+                    </h2>
+        
+                    <!-- Text -->
+                    <p class="text-gray-800 mb-6 mb-md-8">
+                        Thanks to the research astronomers have put in to help classify galaxies based on their shapes, also known as their morphologies, we can determine that early-type galaxies are elliptical or lenticular while late-type galaxies are more spiral or irregular in shape. Their shape also correlates to different properties within their composition. For example, early-type galaxies are found in richer environments that contain nearby galaxies, have older stellar populations, and have less interstellar gas. Late-type stars show the opposite trends. This information helps astronomers understand the formation and evolution of galaxies. Here, we want to analyze data of three early-type galaxies and observe their masses of neutral atomic gas.
+                    </p>
+        
+                    <!-- Heading -->
+                    <h2 class="mt-7">
+                        Observations
+                    </h2>
+        
+                    <!-- Text -->
+                    <p class="text-gray-800 mb-5">
+                        Observations were taken with the 100m diameter Effelsberg Radio Telescope located at the Max Planck Institute for Radio Astronomy in Bonn, Germany. Besides using the data set for Sextans B, we also had to examine IC1156, UGC10115, and NGC6172. Our file was saved as a .eff extension and analysis was completed using the Chicken Scheme IDE for OS X. Data was analysed using ASURV and R packages.           
+                    </p>
+
+                    
+                    <h2>
+                        Analysis & Results
+                    </h2>
+                    
+                    <p>
+                        To determine the appropriate conversion factor between K km s-1 and Jy km s-1  , we would need to use the spectral line calibrator of Sextans B that we had just calculated. The total H I flux of Sextans B is 106.2 Jy km s-1 . In order to find the conversion factor, we look onto the calculated flux on the plot, as shown to the right. Enclosed in the dotted region is the flux, 103.04, in units of K km s-1 , with an uncertainty of 0.476. The calculated conversion factor came out to 1.0266 ± 0.00495. </p>
+                    <figure class="figure mb-7">
+
+                        <!-- Image -->
+                        <img class="figure-img img-fluid rounded lift lift-lg" src="../static/img/ic1156.png" alt="...">
+        
+                        <!-- Caption -->
+                        <figcaption class="figure-caption text-center">
+                            IC1156             
+                        </figcaption>
+                    </figure>
+
+                    <p>The baseline fit was of the order 2 to produce this spectra and it doesn’t seem that there was an H I line emission detected. This is because the full plot showed various peaks and dips, with no correlation to an emission or not, hence it was difficult to state whether they were H I line emissions.</p>
+                    <figure class="figure mb-7">
+
+                        <!-- Image -->
+                        <img class="figure-img img-fluid rounded lift lift-lg" src="../static/img/ugc10115.png" alt="...">
+        
+                        <!-- Caption -->
+                        <figcaption class="figure-caption text-center">UGC10115</figcaption>
+                    </figure>
+
+                    <p>                    
+                        This had a baseline fit of order 1 and this is a detection of an H I line emission because the flux correlates to what other fluxes have been previously, they don’t venture too far off. Also, this curve is stable and shows an even Gaussian.                
+                    </p>
+
+                    <figure class="figure mb-7">
+
+                        <!-- Image -->
+                        <img class="figure-img img-fluid rounded lift lift-lg" src="../static/img/ngc6172.png" alt="...">
+        
+                        <!-- Caption -->
+                        <figcaption class="figure-caption text-center">
+                            NGC6172
+                        </figcaption>
+                    </figure>
+
+                    <p>
+                        This had a baseline fit of order 1 and this does not seem like H I emissions were detected because the graph was hard to decipher. Also the flux correlates to IC1156, which was previously determined as not having H I line emissions detected.
+                        <br>
+                        <br>
+                        UGC10115 was the only galaxy with detected H I line emissions, and the flux perceived was 133.51 ± 1.211 K km s-1  . Using the conversion factor 1.0266 ± 0.00495, we get  137.06 ± 1.904 Jy Km s-1 .  
+                    </p>
+
+                    <p>
+                        NGC6172: 0.855 ± 0.072 K km s-1 
+                        <br>
+                        IC1156: 0.28412 ± 0.046 K km s-1 
+                        <br>
+                        <br>
+                        
+                        Distance is determined by the formula: D ≈ v / H_0
+                        <br>
+                        Velocity is determined from the peak of the Gaussian curve on the graphs above.
+                    </p>
+                    <figure class="figure mb-7">
+
+                        <!-- Image -->
+                        <img class="figure-img img-fluid rounded lift lift-lg" src="../static/img/formula1.png" alt="...">
+                    </figure>
+                    <figure class="figure mb-7">
+
+                        <!-- Image -->
+                        <img class="figure-img img-fluid rounded lift lift-lg" src="../static/img/formula2.png" alt="...">
+                    </figure>
+                    <figure class="figure mb-7">
+
+                        <!-- Image -->
+                        <img class="figure-img img-fluid rounded lift lift-lg" src="../static/img/formula3.png" alt="...">
+                    </figure>
+                    <p>
+                        It would make sense that IC1156 and UGC10115 would have similar morphologies than that of NGC6172. The two “elliptical” galaxies are at a distance much further away than NGC6172, which means that they are much older. A “central dominant” elliptical should have a more H I emission concentration because it is fairly younger and still going through its hydrogen exhaust, whereas older galaxies have older stars that have gone through most of its hydrogen composition.
+                    </p>
+                    <h2>
+                        Conclusions
+                    </h2>
+
+                    <p>
+                        We found out that the galaxy closest too us, which would be the youngest, is deemed a “central dominant” elliptical galaxy. This means that they are giant elliptical galaxies usually at the center of their cluster. The H I composition also helped us understand the relation of younger to older early-type galaxies. A higher neutral atomic gas ratio would signify a younger galaxy over an older one, or a much more massive galaxy.
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
+      </div>
+    </div>
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="../static/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../static/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="../static/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="../static/libs/aos/dist/aos.js"></script>
+    <script src="../static/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="../static/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="../static/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="../static/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="../static/libs/typed.js/lib/typed.min.js"></script>
+    <script src="../static/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="../static/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="../static/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="../static/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="../static/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="../static/js/theme.min.js"></script>
+
+
+  </body>
+</html>

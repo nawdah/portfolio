@@ -23,8 +23,13 @@
     <section class="navigation">
     <!-- NAVBAR
     ================================================== -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">  
+          <!-- Brand -->
+          <a class="navbar-brand" href="/">
+            <img src="../static/img/namelogo.png" class="navbar-brand-img" alt="...">
+          </a>
+
           <!-- Toggler -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,13 +46,8 @@
             <!-- Navigation -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarLandings" href="#" aria-haspopup="true">
+                        <a class="nav-link dropdown-toggle" id="navbarLandings" href="about" aria-haspopup="true">
                             About
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarPages" href="resume" aria-haspopup="true">
-                            Resume
                         </a>
                     </li>
                     <li class="nav-item dropdown">
@@ -81,17 +81,20 @@
 
             <!-- Badges -->
             <nav class="nav justify-content-center">
-              <a class="badge badge-pill badge-white-soft active mr-1 mb-1" href="#" data-toggle="pill" data-filter="*" data-target="#portfolio">
+              <a class="badge badge-pill badge-blue-soft active mr-1 mb-1" href="#" data-toggle="pill" data-filter="*" data-target="#portfolio">
                 <span class="h6 text-uppercase">Primary</span>
               </a>
-              <a class="badge badge-pill badge-white-soft mr-1 mb-1" href="#" data-toggle="pill" data-filter=".product" data-target="#portfolio">
-                <span class="h6 text-uppercase">Product</span>
+              <a class="badge badge-pill badge-blue-soft mr-1 mb-1" href="#" data-toggle="pill" data-filter=".music" data-target="#portfolio">
+                <span class="h6 text-uppercase">Music</span>
               </a>
-              <a class="badge badge-pill badge-white-soft mr-1 mb-1" href="#" data-toggle="pill" data-filter=".ux" data-target="#portfolio">
-                <span class="h6 text-uppercase">UX</span>
+              <a class="badge badge-pill badge-blue-soft mr-1 mb-1" href="#" data-toggle="pill" data-filter=".astronomy" data-target="#portfolio">
+                <span class="h6 text-uppercase">Astronomy</span>
               </a>
-              <a class="badge badge-pill badge-white-soft mr-1 mb-1" href="#" data-toggle="pill" data-filter=".resources" data-target="#portfolio">
-                <span class="h6 text-uppercase">Resources</span>
+              <a class="badge badge-pill badge-blue-soft mr-1 mb-1" href="#" data-toggle="pill" data-filter=".beauty" data-target="#portfolio">
+                <span class="h6 text-uppercase">Beauty</span>
+              </a>
+              <a class="badge badge-pill badge-blue-soft mr-1 mb-1" href="#" data-toggle="pill" data-filter=".homeslice" data-target="#portfolio">
+                <span class="h6 text-uppercase">HomeSlice</span>
               </a>
             </nav>
 
@@ -113,14 +116,14 @@
     <section class="py-8 py-md-11 mt-n10 mt-md-n14">
       <div class="container">
         <div class="row" id="portfolio" data-isotope='{"layoutMode": "masonry"}'>
-          <div class="col-12 col-md-4 resources">
+          <div class="col-12 col-md-4 music">
 
             <!-- Card -->
-            <a class="card shadow-light-lg mb-7" href="#!">
+            <a class="card mb-7" href="music">
 
               <!-- Image -->
               <div class="card-zoom">
-                <img class="card-img" src="../static/img/portfolio/portfolio-1.jpg" alt="...">
+                <img class="card-img" src="../static/img/music.jpg" alt="...">
               </div>
 
               <!-- Overlay -->
@@ -133,10 +136,10 @@
                   </div>
 
                   <!-- Preheading -->
-                  <h6 class="text-uppercase mb-1 text-muted">Branding</h6>
+                  <h6 class="text-uppercase mb-1 text-muted">Music Wrapped 2019</h6>
 
                   <!-- Heading -->
-                  <h4 class="mb-0">Curology Any Face Campaign</h4>
+                  <h4 class="mb-0">Analyzing Music Trends in '19</h4>
 
                 </div>
               </div>
@@ -144,14 +147,15 @@
             </a>
 
           </div>
-          <div class="col-12 col-md-4 product">
+
+          <div class="col-12 col-md-4 beauty">
 
             <!-- Card -->
-            <a class="card shadow-light-lg mb-7" href="#!">
+            <a class="card shadow-light-lg mb-7" href="beauty">
 
               <!-- Image -->
               <div class="card-zoom">
-                <img class="card-img" src="../static/img/portfolio/portfolio-10.jpg" alt="...">
+                <img class="card-img" src="../static/img/beauty.jpg" alt="...">
               </div>
 
               <!-- Overlay -->
@@ -164,10 +168,10 @@
                   </div>
 
                   <!-- Preheading -->
-                  <h6 class="text-uppercase mb-1 text-muted">Branding</h6>
+                  <h6 class="text-uppercase mb-1 text-muted">Beauty Discovery Tool</h6>
 
                   <!-- Heading -->
-                  <h4 class="mb-0">Honest Packaging</h4>
+                  <h4 class="mb-0">The Primiere Tool for Beauty Discovery</h4>
 
                 </div>
               </div>
@@ -175,14 +179,15 @@
             </a>
 
           </div>
-          <div class="col-12 col-md-4 resources">
+
+          <div class="col-12 col-md-4 astronomy">
 
             <!-- Card -->
-            <a class="card shadow-light-lg mb-7" href="#!">
+            <a class="card shadow-light-lg mb-7" href="photometry">
 
               <!-- Image -->
               <div class="card-zoom">
-                <img class="card-img" src="../static/img/portfolio/portfolio-11.jpg" alt="...">
+                <img class="card-img" src="../static/img/space.jpg" alt="...">
               </div>
 
               <!-- Overlay -->
@@ -195,25 +200,26 @@
                   </div>
 
                   <!-- Preheading -->
-                  <h6 class="text-uppercase mb-1 text-muted">Branding</h6>
+                  <h6 class="text-uppercase mb-1 text-muted">Stellar Photometry</h6>
 
                   <!-- Heading -->
-                  <h4 class="mb-0">Larq Bright Campaign</h4>
+                  <h4 class="mb-0">Stellar Photometry and the Color-Magnitude Diagram</h4>
 
                 </div>
               </div>
 
             </a>
+            
 
           </div>
-          <div class="col-12 col-md-4 ux">
+          <div class="col-12 col-md-4 astronomy">
 
             <!-- Card -->
-            <a class="card shadow-light-lg mb-7" href="#!">
+            <a class="card shadow-light-lg mb-7" href="galaxy">
 
               <!-- Image -->
               <div class="card-zoom">
-                <img class="card-img" src="../static/img/portfolio/portfolio-13.jpg" alt="...">
+                <img class="card-img" src="../static/img/galaxies.jpg" alt="...">
               </div>
 
               <!-- Overlay -->
@@ -226,25 +232,27 @@
                   </div>
 
                   <!-- Preheading -->
-                  <h6 class="text-uppercase mb-1 text-muted">Branding</h6>
+                  <h6 class="text-uppercase mb-1 text-muted">Galaxies</h6>
 
                   <!-- Heading -->
-                  <h4 class="mb-0">Larq Earthtones Collection</h4>
+                  <h4 class="mb-0">Measuring the H I Content of Early-Type Galaxies</h4>
 
                 </div>
               </div>
 
             </a>
+            
 
           </div>
-          <div class="col-12 col-md-4 ux">
+  
+          <div class="col-12 col-md-4 homeslice">
 
             <!-- Card -->
-            <a class="card shadow-light-lg mb-7" href="#!">
+            <a class="card shadow-light-lg mb-7" href="homeslice">
 
               <!-- Image -->
               <div class="card-zoom">
-                <img class="card-img" src="../static/img/portfolio/portfolio-12.jpg" alt="...">
+                <img class="card-img" src="../static/img/home.jpg" alt="...">
               </div>
 
               <!-- Overlay -->
@@ -257,140 +265,14 @@
                   </div>
 
                   <!-- Preheading -->
-                  <h6 class="text-uppercase mb-1 text-muted">Product Design</h6>
+                  <h6 class="text-uppercase mb-1 text-muted">HomeSlice</h6>
 
                   <!-- Heading -->
-                  <h4 class="mb-0">Goby Packaging </h4>
+                  <h4 class="mb-0">Unlock Your Home Equity Today</h4>
 
                 </div>
               </div>
-
             </a>
-
-          </div>
-          <div class="col-12 col-md-4 product">
-
-            <!-- Card -->
-            <a class="card shadow-light-lg mb-7" href="#!">
-
-              <!-- Image -->
-              <div class="card-zoom">
-                <img class="card-img" src="../static/img/portfolio/portfolio-4.jpg" alt="...">
-              </div>
-
-              <!-- Overlay -->
-              <div class="card-img-overlay card-img-overlay-hover">
-                <div class="card-body bg-white">
-
-                  <!-- Shape -->
-                  <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
-                    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
-                  </div>
-
-                  <!-- Preheading -->
-                  <h6 class="text-uppercase mb-1 text-muted">Ideation</h6>
-
-                  <!-- Heading -->
-                  <h4 class="mb-0">Doodle Pads</h4>
-
-                </div>
-              </div>
-
-            </a>
-
-          </div>
-          <div class="col-12 col-md-4 product">
-
-            <!-- Card -->
-            <a class="card shadow-light-lg mb-7" href="#!">
-
-              <!-- Image -->
-              <div class="card-zoom">
-                <img class="card-img" src="../static/img/portfolio/portfolio-14.jpg" alt="...">
-              </div>
-
-              <!-- Overlay -->
-              <div class="card-img-overlay card-img-overlay-hover">
-                <div class="card-body bg-white">
-
-                  <!-- Shape -->
-                  <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
-                    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
-                  </div>
-
-                  <!-- Preheading -->
-                  <h6 class="text-uppercase mb-1 text-muted">Product Design</h6>
-
-                  <!-- Heading -->
-                  <h4 class="mb-0">Larq Bottle Redesign</h4>
-
-                </div>
-              </div>
-
-            </a>
-
-          </div>
-          <div class="col-12 col-md-4 ux">
-
-            <!-- Card -->
-            <a class="card shadow-light-lg mb-7" href="#!">
-
-              <!-- Image -->
-              <div class="card-zoom">
-                <img class="card-img" src="../static/img/portfolio/portfolio-6.jpg" alt="...">
-              </div>
-
-              <!-- Overlay -->
-              <div class="card-img-overlay card-img-overlay-hover">
-                <div class="card-body bg-white">
-
-                  <!-- Shape -->
-                  <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
-                    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
-                  </div>
-
-                  <!-- Preheading -->
-                  <h6 class="text-uppercase mb-1 text-muted">Product Exploration</h6>
-
-                  <!-- Heading -->
-                  <h4 class="mb-0">Goby Brush Prototype</h4>
-
-                </div>
-              </div>
-
-            </a>
-
-          </div>
-          <div class="col-12 col-md-4 ux">
-
-            <!-- Card -->
-            <a class="card shadow-light-lg mb-7" href="#!">
-
-              <!-- Image -->
-              <div class="card-zoom">
-                <img class="card-img" src="../static/img/portfolio/portfolio-15.jpg" alt="...">
-              </div>
-
-              <!-- Overlay -->
-              <div class="card-img-overlay card-img-overlay-hover">
-                <div class="card-body bg-white">
-
-                  <!-- Shape -->
-                  <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
-                    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
-                  </div>
-
-                  <!-- Preheading -->
-                  <h6 class="text-uppercase mb-1 text-muted">Branding</h6>
-
-                  <!-- Heading -->
-                  <h4 class="mb-0">Trek Ride Campaign</h4>
-
-                </div>
-              </div>
-
-            </a>
-
           </div>
         </div>
       </div>

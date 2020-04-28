@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="../static/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="../static/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="../static/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="../static/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="../static/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="../static/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="../static/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../static/css/theme.min.css">
+
+    <title>Nada Ibrahim</title>
+  </head>
+  <body>
+    <section class="navigation">
+    <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light overlay">
+        <div class="container">
+            
+            <!-- Brand -->
+          <a class="navbar-brand" href="/">
+            <img src="../static/img/namelogo.png" class="navbar-brand-img" alt="...">
+          </a>
+          
+          <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+  
+          <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+  
+            <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fe fe-x"></i>
+                 </button>
+  
+            <!-- Navigation -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarLandings" href="about" aria-haspopup="true">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarAccount" href="contact" aria-haspopup="true">
+                            Contact
+                        </a>
+                    </li>
+                </ul> 
+            </div>
+  
+        </div>
+      </nav>
+    </section>
+
+    <!-- CONTENT
+    ================================================== -->
+    <section class="pt-8 pt-md-11">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md">
+              
+              <!-- Link -->
+              <a href="/" class="font-weight-bold font-size-sm text-decoration-none mb-3">
+                <i class="fe fe-arrow-left mr-3"></i> Go Back
+              </a>
+  
+              <!-- Heading -->
+              <h1 class="display-4 mb-2">
+                Beauty Discovery Tool
+              </h1>
+  
+              <!-- Text -->
+              <p class="font-size-lg text-gray-700 mb-5 mb-md-0">
+                February 2020
+              </p>
+  
+            </div>
+          </div> <!-- / .row -->
+          <div class="row">
+            <div class="col-12">
+              
+              <!-- Divider -->
+              <hr class="my-6 my-md-8 border-gray-300">
+  
+            </div>
+          </div> <!-- / .row -->
+          <div class="row">
+            <div class="col-12 col-md-8">
+              
+              <!-- Heading -->
+              <h2>
+                Proposal
+              </h2>
+  
+              <!-- Text -->
+              <p class="text-gray-800 mb-6 mb-md-8">
+                Navigating the beauty community can be cumbersome to those who are new, it can feel overwhelming by the large database of products available. Our group set out to create a dynamic, user-interactive beauty discovery tool. 
+                <br>
+                <br>
+                We incorporated ETL techniques by scraping Sephora and Ulta websites using Selenium. Our objective was to extract product names, brands, price, ingredients, ratings and descriptions. We primarily used JavaScript, specifically p5.js, d3.js, and Plotly.js to construct the interactivity of this application, a Flask component for the API, Postgres SQL for our database, and Python to clean up the dataframe.
+              </p>
+
+              <section class="pt-3 pt-md-3">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-lg-11 col-xl-10">
+          
+                      <!-- Slider -->
+                      <div data-flickity='{"wrapAround": true, "pageDots": false, "imagesLoaded": true, "adaptiveHeight": true}'>
+                        <div class="w-100">
+                          <img src="../static/img/sephoraweb.png" alt="..." class="img-fluid rounded-lg">
+                        </div>
+                        <div class="w-100">
+                          <img src="../static/img/ultaweb.png" alt="..." class="img-fluid rounded-lg">
+                        </div>
+                        <div class="w-100">
+                          <img src="../static/img/datacleaning.jpeg" alt="..." class="img-fluid rounded-lg">
+                        </div>
+                      </div>
+          
+                    </div>
+                  </div> <!-- / .row -->
+                </div> <!-- / .container -->
+              </section>
+  
+              <!-- Heading -->
+              <h2 class="mt-7">
+                Extraction
+              </h2>
+  
+              <!-- Text -->
+              <p class="text-gray-800 mb-6 mb-md-8">
+                Our objective for scraping was to extract the brand name, product name, price, rating, details such as skin type, and ingredient list. We assumed that the script needed to scrape both Sephora and Ulta would be similar, since they are both grid formatted e-commerce sites. However, we eventually realized both sites utilized Javascript, so scraping with just the BeautifulSoup library was simply not enough.
+              </p>
+
+              <h4>
+                  Sephora
+              </h4>
+              
+              <p class="text-gray-800 mb-6 mb-md-8">
+                Before working on crawling through the Sephora website, we needed to familiarize ourselves with the framework of their HTML & Javascript. Using the Inspect tool on Google Chrome’s browser, we can browse through the entire profile’s code. Highlighting and inspecting specific text we need gives us the attributes required for scraping. Initially we used BeautifulSoup to extract all attributes needed. This only let us extract 12 products per page. That's when we realized that Sephora ran the rest of the grid through JS. We imported the selenium library to extract data and added a delay and scroll to allow the page to fully load. For more information, check the <a href="https://github.com/nawdah/cosmetics-proj/blob/master/sephora_scraping.ipynb">ipython notebook</a>.
+              </p>
+
+              <h4>
+                Ulta
+              </h4>
+            
+               <p class="text-gray-800 mb-6 mb-md-8">
+                Similarly to Sephora, we were initially stumped to why some of our data was able to be extracted and the rest was hidden. Our "Eureka!" moment was realized when we disabled JS on our browsers and realized most of the page did not load. That's when we use selenium in conjuncture to bs4 to extract the data. We added a delay as chromedriver.exe was loading up each page.
+               </p>
+
+               <div class="form-row">
+                <div class="col-6">
+  
+                  <!-- Image -->
+                  <a class="d-block lift lift-lg" data-fancybox data-width="1280" data-height="1920" href="../static/img/schema1.PNG">
+                    <img src="../static/img/schema1.PNG" alt="..." class="img-fluid rounded">
+                  </a>
+  
+                </div>
+                <div class="col-6">
+  
+                  <!-- Image -->
+                  <a class="d-block mb-4 lift lift-lg" data-fancybox data-width="900" data-height="600" href="../static/img/schema2.PNG">
+                    <img src="../static/img/schema2.PNG" alt="..." class="img-fluid rounded">
+                  </a>
+  
+                  <!-- Image -->
+                  <a class="d-block lift lift-lg" data-fancybox data-width="900" data-height="600" href="../static/img/db.PNG">
+                    <img src="../static/img/db.PNG" alt="..." class="img-fluid rounded">
+                  </a>
+  
+                </div>
+              </div> <!-- / .row -->
+              
+              <!-- Heading -->
+              <h2 class="mb-5">
+                Backend
+              </h2>
+  
+              <p class="text-gray-800 mb-6 mb-md-8">
+                Once we completed the extraction, we used Python to clean up the data so that it would be ready to load into Postgres. Once the code was loaded up, we used pg8000 to allow us to write SQL queries that would be pertinent for the performance of this application. Within these queries, we dropped products we weren't using.
+                <br>
+                <br>
+                Our backend component was completed once we used Flask to convert our csv files into a json file using jsonify. Using the json file, called makeup_data.json, we were able to create the interactive components of our project.
+              </p>
+
+              <h2 class="mb-5">
+                Frontend
+              </h2>
+  
+              <p class="text-gray-800 mb-6 mb-md-8">
+                In order to start, we needed to construct a frame work for where all of our visualizations would go. Our HTML linked our CSS and JS files together, as well as any extra dependencies, such as Bootstrap, p5, d3, and different fonts. The first row we designated for the title and description. We also attached a button that would instruct the user on how to interact with the interface.                <br>
+                <br>
+                To get a voice activated button, we used the p5 library, specifically the speak() function.
+                Once the button is pressed, a voice** is activated that says "Please click a part of the face." 
+                <br>
+                <br>
+                **For our entertainment, we made the voice a UK female accent. 
+                <br>
+                <br>
+                If we follow instructions and click the face, the face image changes and triggers an event listener that populates the bottom of the page with some graphs.              
+                <br>
+                <br>
+                To the right we have a drop down menu that helps users pick out specific products per category. We also included a direct link to purchase the product if the user wishes.
+                We coded a facemap on the initial face chart so that when you click it, it'll produce info based on each product type. Here you can see the switching per category.
+              </p>
+
+              <section class="pt-3 pt-md-3 pb-9 pb-md-9">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-lg-11 col-xl-10">
+          
+                      <!-- Slider -->
+                      <div data-flickity='{"wrapAround": true, "pageDots": false, "imagesLoaded": true, "adaptiveHeight": true}'>
+                        <div class="w-100">
+                          <img src="../static/img/click_for_instructions.gif" alt="..." class="img-fluid rounded-lg">
+                        </div>
+                        <div class="w-100">
+                            <img src="../static/img/drop_down.gif" alt="..." class="img-fluid rounded-lg">
+                        </div>
+                        <div class="w-100">
+                          <img src="../static/img/faces.gif" alt="..." class="img-fluid rounded-lg">
+                        </div>
+                      </div>
+          
+                    </div>
+                  </div> <!-- / .row -->
+                </div> <!-- / .container -->
+              </section>
+            </div>
+            <div class="col-12 col-md-4">
+              
+              <!-- Card -->
+              <div class="card shadow-light-lg mb-5">
+                <div class="card-body">
+                  
+                  <!-- Heading -->
+                   <h4>
+                      Team
+                   </h4>
+  
+                  <!-- Text -->
+                  <p class="font-size-sm text-gray-800 mb-5">
+                      <a href="https://www.linkedin.com/in/burgosjeffrey/">Jeffrey Burgos</a>
+                  </p>
+                  <p class="font-size-sm text-gray-800 mb-5">
+                    <a href="https://www.linkedin.com/in/collins-mokaya-91abb052/">Collins Mokaya</a>
+                  </p>
+                  <p class="font-size-sm text-gray-800 mb-5">
+                    <a href="https://www.linkedin.com/in/dan-bishop-65601170/">Dan Bishop</a>
+                  </p>
+                  <p class="font-size-sm text-gray-800 mb-0">
+                    <a href="https://www.linkedin.com/in/nadaibrahim96/">Nada Ibrahim</a>
+                  </p> 
+                </div>
+              </div>
+  
+            </div>
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </section>
+  
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
+      </div>
+    </div>
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="../static/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../static/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="../static/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="../static/libs/aos/dist/aos.js"></script>
+    <script src="../static/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="../static/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="../static/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="../static/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="../static/libs/typed.js/lib/typed.min.js"></script>
+    <script src="../static/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="../static/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="../static/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="../static/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="../static/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="../static/js/theme.min.js"></script>
+
+
+  </body>
+</html>

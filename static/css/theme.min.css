@@ -445,6 +445,13 @@ hr {
     height: auto
 }
 
+.img-rounded{
+    max-width: 100%;
+    height: auto;
+    border-radius: .575rem;
+    padding: .25rem;
+}
+
 .img-thumbnail {
     padding: .25rem;
     background-color: #fff;
@@ -4749,9 +4756,9 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0);
     background-clip: border-box;
-    border: 0 solid #f1f4f8;
+    border: 0 solid #f1f4f800;
     border-radius: .375rem
 }
 
@@ -5295,6 +5302,21 @@ a.badge-white:focus, a.badge-white:hover {
 a.badge-white.focus, a.badge-white:focus {
     outline: 0;
     box-shadow: 0 0 0 0 rgba(255, 255, 255, .5)
+}
+
+.badge-blue {
+    color: #0b475f;
+    background-color: #fff
+}
+
+a.badge-blue:focus, a.badge-blue:hover {
+    color: #0b475f;
+    background-color: #e6e6e6
+}
+
+a.badge-blue.focus, a.badge-blue:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0 rgba(15, 112, 156, 0.5)
 }
 
 .jumbotron {
@@ -8670,6 +8692,9 @@ a.bg-white:focus, a.bg-white:hover, button.bg-white:focus, button.bg-white:hover
 
 .pt-4, .py-4 {
     padding-top: 1rem!important
+}
+.pt-44{
+    padding-top: .5rem!important
 }
 
 .pr-4, .px-4 {
@@ -12483,11 +12508,11 @@ a.text-success:focus, a.text-success:hover {
 }
 
 .text-info {
-    color: #7c69ef!important
+    color: #d46409!important
 }
 
 a.text-info:focus, a.text-info:hover {
-    color: #4024e8!important
+    color: #24e88d!important
 }
 
 .text-warning {
@@ -12551,7 +12576,7 @@ a.text-white:focus, a.text-white:hover {
 }
 
 .text-muted {
-    color: #869ab8!important
+    color: #365483!important
 }
 
 .text-black-50 {
@@ -12969,6 +12994,16 @@ a.badge-white-soft:focus, a.badge-white-soft:hover {
 .badge-gray-700-soft {
     background-color: rgba(80, 102, 144, .1);
     color: #506690
+}
+
+.badge-blue-soft {
+    background-color: rgba(16, 76, 110, 0.1);
+    color: rgb(16, 74, 97)
+}
+
+a.badge-blue-soft:focus, a.badge-blue-soft:hover {
+    background-color: rgba(16, 80, 105, 0.2);
+    color: #fff
 }
 
 a.badge-gray-700-soft:focus, a.badge-gray-700-soft:hover {
@@ -13821,6 +13856,10 @@ a.card-body:hover, a.card-footer:hover, a.card-meta:hover, a.card:hover {
     }
 }
 
+navigation{
+    padding-top: 0px;
+}
+
 .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl {
     padding-left: 20px!important;
     padding-right: 20px!important
@@ -13831,7 +13870,7 @@ a.card-body:hover, a.card-footer:hover, a.card-meta:hover, a.card:hover {
 }
 
 .navbar-brand-img {
-    max-height: 4em;
+    max-height: 2em;
     width: auto
 }
 
@@ -14852,7 +14891,7 @@ code {
 }
 
 .overlay-black::before {
-    background-color: #ff9419ef;
+    background-color: #f0ad1c;
 }
 
 .overlay-gradient-black-right::before {
@@ -14881,6 +14920,39 @@ code {
     .overlay-gradient-black-left::before {
         background-image: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(50%, #161c2d), to(#161c2d));
         background-image: linear-gradient(to left, transparent, #161c2d 50%, #161c2d)
+    }
+}
+
+.overlay-custom::before {
+    background-color: #1e6eb870;
+}
+
+.overlay-gradient-custom-right::before {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#e79d6bdc));
+    background-image: linear-gradient(to bottom, transparent, #e79d6b6c)
+}
+
+@media (min-width:768px) {
+    .overlay-gradient-custom-right::before {
+        background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, #e79d6b8a), to(#e79d6bdc));
+        background-image: linear-gradient(to right, transparent, #e79d6b65 50%, #e79d6b57)
+    }
+}
+
+.overlay-gradient-custom-down::before {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#e79d6bdc));
+    background-image: linear-gradient(to bottom, transparent, #e79d6b9d)
+}
+
+.overlay-gradient-custom-left::before {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#e79d6bdc));
+    background-image: linear-gradient(to bottom, transparent, #e79d6b96)
+}
+
+@media (min-width:768px) {
+    .overlay-gradient-custom-left::before {
+        background-image: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(50%, #e79d6bdc), to(#e79d6bdc));
+        background-image: linear-gradient(to left, transparent, #e79d6bdc 50%, #e79d6bdc)
     }
 }
 
